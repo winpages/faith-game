@@ -1,0 +1,889 @@
+@charset "utf-8";
+
+/* General styles */
+@font-face {
+    font-family: 'komika_textregular';
+    src: url('../font/KOMTXT__-webfont.eot');
+    src: url('../font/KOMTXT__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/KOMTXT__-webfont.woff') format('woff'),
+         url('../font/KOMTXT__-webfont.ttf') format('truetype'),
+         url('../font/KOMTXT__-webfont.svg#komika_textregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background-color: #000;
+  margin-top: 50px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  -moz-user-drag: none;
+  -khtml-user-drag: none;
+  -webkit-user-drag: none;
+  -o-user-drag: none;
+  font-family: 'komika_textregular';
+}
+
+a {
+   outline: 0;
+   font-size: 18px;
+   color: #E9E9E9;
+   text-decoration: none;
+}
+
+#container {
+	position:relative;
+	width:800px;
+	height:450px;
+	z-index:1;
+	top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+}
+
+.battle {
+  background-image: url("../images/bg.jpg")
+}
+
+.error {
+  color: #FFF;
+}
+.error-text {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#return {
+	position:absolute;
+	width:800px;
+	height:20px;
+	z-index:2;
+	top: 460px;
+	text-align: center;
+}
+
+/* Animation styles */
+
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+  @-webkit-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+  @-moz-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+  @keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+
+  @keyframes explosion {
+    0% {
+      opacity: 0;
+    }
+    2% {
+      opacity: 1;
+    }
+    30% {
+      opacity: .10;
+    }
+    32% {
+      opacity: .25;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @-moz-keyframes explosion {
+    0% {
+      opacity: 0;
+    }
+    2% {
+      opacity: 1;
+    }
+    30% {
+      opacity: .10;
+    }
+    32% {
+      opacity: .25;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @-webkit-keyframes explosion {
+    0% {
+      opacity: 0;
+    }
+    2% {
+      opacity: 1;
+    }
+    30% {
+      opacity: .10;
+    }
+    32% {
+      opacity: .25;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes flash {
+  	0% {
+  		opacity: 1;
+  	}
+  	100% {
+  		opacity: 0;
+  	}
+  }
+
+  @-moz-keyframes flash {
+  	0% {
+  		opacity: 1;
+  	}
+  	100% {
+  		opacity: 0;
+  	}
+  }
+
+  @-webkit-keyframes flash {
+  	0% {
+  		opacity: 1;
+  	}
+  	100% {
+  		opacity: 0;
+  	}
+  }
+
+  @-webkit-keyframes fadeWhite {
+  		from {
+  				opacity:0;
+  			}
+  			75% {
+  				opacity: 0.50;
+  			}
+  			to {
+  				opacity:1;
+  			}
+  		}
+  @-moz-keyframes fadeWhite {
+  		from {
+  			opacity:0;
+  		}
+  		75% {
+  			opacity: 0.50;
+  		}
+  		to {
+  			opacity:1;
+  		}
+  	}
+  @keyframes fadeWhite {
+  		from {
+  			opacity:0;
+  		}
+  		75% {
+  			opacity: 0.50;
+  		}
+  		to {
+  			opacity:1;
+  		}
+  	}
+
+    @keyframes flicker {
+      0% {
+        opacity: 0;
+      }
+      10% {
+        opacity: .40;
+      }
+      30% {
+        opacity: .10;
+      }
+      32% {
+        opacity: .25;
+      }
+      50% {
+        opacity: 0;
+      }
+      55% {
+        opacity: .30;
+      }
+      58% {
+        opacity: 0;
+      }
+      70% {
+        opacity: 15%
+      }
+      72% {
+        opacity: 0;
+      }
+      75% {
+        opacity: .30;
+      }
+      77% {
+        opacity: 0;
+      }
+      85% {
+        opacity: .20;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @-moz-keyframes flicker {
+      0% {
+        opacity: 0;
+      }
+      10% {
+        opacity: .40;
+      }
+      30% {
+        opacity: .10;
+      }
+      32% {
+        opacity: .25;
+      }
+      50% {
+        opacity: 0;
+      }
+      55% {
+        opacity: .30;
+      }
+      58% {
+        opacity: 0;
+      }
+      70% {
+        opacity: 15%
+      }
+      72% {
+        opacity: 0;
+      }
+      75% {
+        opacity: .30;
+      }
+      77% {
+        opacity: 0;
+      }
+      85% {
+        opacity: .20;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @-webkit-keyframes flicker {
+      0% {
+        opacity: 0;
+      }
+      10% {
+        opacity: .40;
+      }
+      30% {
+        opacity: .10;
+      }
+      32% {
+        opacity: .25;
+      }
+      50% {
+        opacity: 0;
+      }
+      55% {
+        opacity: .30;
+      }
+      58% {
+        opacity: 0;
+      }
+      70% {
+        opacity: 15%
+      }
+      72% {
+        opacity: 0;
+      }
+      75% {
+        opacity: .30;
+      }
+      77% {
+        opacity: 0;
+      }
+      85% {
+        opacity: .20;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+.fade-in-1, .fade-in-2, .fade-in-3, .fade-in-4, .dialog-fade-in {
+    opacity:0;  /* make things invisible upon start */
+}
+.fade-in-1 {
+  -webkit-animation:fadeIn 1s ease-in 1 forwards;
+  -moz-animation:fadeIn 1s ease-in 1 forwards;
+  animation:fadeIn 1s ease-in 1 forwards;
+}
+
+.fade-in-2 {
+  -webkit-animation:fadeIn 2s ease-in 1 forwards;
+  -moz-animation:fadeIn 2s ease-in 1 forwards;
+  animation:fadeIn 2s ease-in 1 forwards;
+}
+
+.fade-in-3 {
+  -webkit-animation:fadeIn 3s ease-in 1 forwards;
+  -moz-animation:fadeIn 3s ease-in 1 forwards;
+  animation:fadeIn 3s ease-in 1 forwards;
+}
+
+.fade-in-4 {
+  -webkit-animation:fadeIn 4s ease-in 1 forwards;
+  -moz-animation:fadeIn 4s ease-in 1 forwards;
+  animation:fadeIn 4s ease-in 1 forwards;
+}
+
+.dialog-fade-in {
+  -webkit-animation:fadeIn .9s ease-in 1 forwards;
+  -moz-animation:fadeIn .9s ease-in 1 forwards;
+  animation:fadeIn .9s ease-in 1 forwards;
+}
+
+.final-fade {
+  -webkit-animation: fadeOut 2s ease-in 1 forwards 5s;
+  -moz-animation: fadeOut 2s ease-in 1 forwards 5s;
+  animation: fadeOut 2s ease-in 1 forwards 5s;
+}
+
+/* Soldiers */
+#soldier_a, #soldier_b, #soldier_c, #soldier_d,
+#soldier_e, #soldier_f, #soldier_g {
+  opacity: 0;
+}
+
+#soldier_a:hover, #soldier_b:hover, #soldier_c:hover, #soldier_d:hover,
+#soldier_e:hover, #soldier_f:hover, #soldier_g:hover {
+  -webkit-animation:explosion .9s 1 forwards;
+  -moz-animation:explosion .9s 1 forwards;
+  animation:explosion .9s 1 forwards;
+}
+
+#soldier_a {
+	position:absolute;
+	width:62px;
+	height:88px;
+	z-index:3;
+	left: 94px;
+	top: 252px;
+  background-image: url("../images/a_on.jpg")
+}
+#soldier_b {
+	position:absolute;
+	width:82px;
+	height:75px;
+	z-index:4;
+	left: 210px;
+	top: 251px;
+  background-image: url("../images/b_on.jpg")
+}
+#soldier_c {
+	position:absolute;
+	width:61px;
+	height:56px;
+	z-index:5;
+	left: 684px;
+	top: 175px;
+  	background-image: url("../images/c_on.jpg")
+}
+#soldier_d {
+	position:absolute;
+	width:87px;
+	height:45px;
+	z-index:6;
+	left: 645px;
+	top: 236px;
+  background-image: url("../images/d_on.jpg")
+}
+#soldier_e {
+	position:absolute;
+	width:54px;
+	height:46px;
+	z-index:7;
+	left: 606px;
+	top: 281px;
+  background-image: url("../images/e_on.jpg")
+}
+#soldier_f {
+	position:absolute;
+	width:103px;
+	height:49px;
+	z-index:8;
+	left: 662px;
+	top: 283px;
+  background-image: url("../images/f_on.jpg")
+}
+#soldier_g {
+	position:absolute;
+	width:211px;
+	height:121px;
+	z-index:9;
+	left: 589px;
+	top: 329px;
+  background-image: url("../images/g_on.jpg")
+}
+
+/* Speech Ballons */
+blockquote {
+	position: absolute;
+	padding: 8px 14px 10px 14px;
+	margin: 1em 0px 3em;
+	border: 2px solid #000;
+	display: block;
+	color: #000;
+	background: none repeat scroll 0% 0% #FFF;
+	border-radius: 35px;
+	max-width: 300px;
+	font-size: 22px;
+	z-index: 100;
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:.9s;
+	-moz-animation-duration:.9s;
+	animation-duration:.9s;
+
+	text-align: center;
+	line-height: 24px;
+}
+
+blockquote p {
+	margin: 0px;
+}
+
+/* General Tail Styles */
+#balloon-a::before, #balloon-b::before, #balloon-c::before,
+#balloon-d::before, #balloon-e::before, #balloon-f::before,
+#balloon-g::before {
+		content: "";
+    position: absolute;
+    z-index: 10;
+    bottom: -50px;
+    width: 78px;
+    height: 50px;
+    display: block;
+}
+
+/* Left Tail */
+#balloon-a::before, #balloon-b::before {
+		left: 25px;
+		background: url(../images/balloon-tail-left.png);
+}
+
+#balloon-f::before {
+	right: 40px;
+	background: url(../images/balloon-tail-left.png);
+}
+
+/* Right Tail */
+#balloon-c::before, #balloon-d::before, #balloon-e::before,
+#balloon-g::before {
+		right: 25px;
+		background: url(../images/balloon-tail-right.png);
+}
+
+/* Ballon Specific Classes */
+#balloon-a {
+	bottom: 175px;
+	left: 115px;
+}
+
+#balloon-b {
+	bottom: 160px;
+	left: 260px;
+}
+
+#balloon-c {
+	bottom: 240px;
+	right: 85px;
+}
+
+#balloon-d {
+	bottom: 185px;
+	right: 120px;
+}
+
+#balloon-e {
+	bottom: 145px;
+	right: 140px;
+}
+
+#balloon-f {
+	bottom: 120px;
+	right: 10px;
+}
+
+#balloon-g {
+	bottom: 90px;
+	right: 140px;
+}
+
+/* Thought balloons */
+#thought-a, #thought-b, #thought-c, #thought-d,
+#thought-e, #thought-f, #thought-g {
+  width: 146px;
+  height: 125px;
+  position:absolute;
+  z-index: 1000;
+}
+
+#thought-a, #thought-b {
+  background-image: url(../images/thought_left.png);
+}
+
+#thought-c, #thought-d, #thought-e, #thought-f, #thought-g {
+  background-image: url(../images/thought_right.png);
+}
+
+#thought-a {
+	bottom: 195px;
+	left: 134px;
+}
+
+#thought-b {
+	bottom: 185px;
+	left: 279px;
+}
+
+#thought-c {
+	bottom: 265px;
+	right: 99px;
+}
+
+#thought-d {
+	bottom: 213px;
+	right: 147px;
+}
+
+#thought-e {
+	bottom: 170px;
+	right: 164px;
+}
+
+#thought-f {
+	bottom: 155px;
+	right: 134px;
+}
+
+#thought-g {
+	bottom: 112px;
+	right: 161px;
+}
+
+/* Hints */
+.keyhole-left {
+	left: 45px;
+	top: 174px;
+}
+
+.keyhole-center {
+	left: 163px;
+	top: 174px;
+}
+.keyhole-right {
+	left: 280px;
+	top: 174px;
+}
+
+.keyhole	{
+	position:absolute;
+	width:57px;
+	height:53px;
+}
+
+.mouse-off {
+	background-image: url(../images/key_hole.jpg);
+}
+
+.keyhole-out {
+	background-image: url(../images/key_hole_light.jpg);
+}
+
+.mouse-on {
+	background-image: url(../images/key_hole_light.jpg);
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opactiy 0.3s ease-in-out;
+	-ms-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+.mouse-on:hover {
+	transition: none;
+	-o-transition: none;
+	-ms-transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+	zoom: 1;
+	opacity: 1;
+}
+
+.keyflash {
+	opacity: 0;
+	background-image: url("../images/key_hole_flash.png");
+	position:absolute;
+	width:57px;
+	height:53px;
+}
+
+.keyflash:hover {
+	animation-name: flash, flicker;
+  -moz-animation-name: flash, flicker;
+	-webkit-animation-name: flash, flicker;
+
+	animation-duration: 0.5s, 1.7s;
+  -moz-animation-duration: 0.5s, 1.7s;
+	-webkit-animation-duration: 0.5s, 1.7s ;
+
+  animation-delay: 0, 0.5;
+  -moz-animation-delay: 0, 0.5s;
+  -webkit-animation-delay: 0, 0.5s;
+
+	animation-iteration-count: 1, infinite;
+  -moz-animation-iteration-count: 1, infinite;
+	-webkit-animation-iteration-count: 1, infinite;
+}
+
+.fade-in {
+opacity:0;  /* make things invisible upon start */
+-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+-moz-animation:fadeIn ease-in 1;
+animation:fadeIn ease-in 1;
+
+-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+-moz-animation-fill-mode:forwards;
+animation-fill-mode:forwards;
+
+-webkit-animation-duration:.9s;
+-moz-animation-duration:.9s;
+animation-duration:.9s;
+}
+
+.keyhole-fade-in {
+opacity:0;  /* make things invisible upon start */
+-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+-moz-animation:fadeIn ease-in 1;
+animation:fadeIn ease-in 1;
+
+-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+-moz-animation-fill-mode:forwards;
+animation-fill-mode:forwards;
+
+-webkit-animation-duration:.5s;
+-moz-animation-duration:.5s;
+animation-duration:.5s;
+}
+
+#hint-1, #hint-2, #hint-3, #hint-4, #hint-5 {
+  position:absolute;
+	width:400px;
+	height:270px;
+	z-index:11;
+	left: 50px;
+	top: 50px;
+}
+
+#hint-1, #hint-2 {
+  background-image: url(../images/hint_blank.jpg);
+}
+
+#hint-3 {
+  background-image: url(../images/hint_text_1.jpg);
+}
+
+#hint-4 {
+  background-image: url(../images/hint_text_2.jpg);
+}
+
+#hint-5 {
+  background-image: url(../images/hint_text_3.jpg);
+}
+
+/* Small Chests */
+
+#small-chest {
+  width: 44px;
+  height: 54px;
+  position: relative;
+  left: 50px;
+  top: 23px;
+  background-image: url(../images/chest_small_off.gif);
+}
+
+#small-chest:hover {
+  background-image: url(../images/chest_small_on.gif);
+}
+
+/* Large Chests */
+#chest-closed, #chest-open {
+    position: absolute;
+    display: block;
+    width: 206px;
+    height: 213px;
+    left: 50%;
+    margin-left: -103px;
+    top: 50%;
+    margin-top: -106px;
+}
+
+#chest-closed {
+  background: url(../images/chest_off.png) left bottom no-repeat;
+  opacity: 0;
+  -webkit-animation:fadeIn 1s ease-in 1 forwards;
+  -moz-animation:fadeIn 1s ease-in 1 forwards;
+  animation:fadeIn 1s ease-in 1 forwards;
+}
+
+#chest-closed:hover {
+  background: url(../images/chest_on.png) left bottom no-repeat;
+}
+
+#chest-open {
+  background: url(../images/chest_open.png) left bottom no-repeat;
+}
+
+/* Keys */
+#key, #key-fake-out {
+  position: relative;
+  width: 50px;
+  height: 38px;
+  left: 50px;
+  top: 35px;
+  z-index: 1000;
+}
+
+#key {
+  background-image: url(../images/key.gif);
+}
+
+#key-fake-out {
+  background-image: url(../images/key_off.gif);
+}
+
+#key-fake-out:hover {
+  -webkit-animation:fadeOut ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeOut ease-in 1;
+  animation:fadeOut ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:.3s;
+  -moz-animation-duration:.3s;
+  animation-duration:.3s;
+}
+
+.key {
+  	position:relative;
+    width: 50px;
+    height: 38px;
+    top: 395px;
+    margin-left: 10px;
+    left:15px;
+    background-image: url(../images/key.png);
+    float: left;
+}
+
+/* Verse styles */
+#verse {
+  position:absolute;
+  width:410px;
+  height:auto;
+  z-index:1;
+  left: 197px;
+  top: 160px;
+  line-height: 26px;
+  font-size: 18px;
+  font-style: normal;
+}
+#rings {
+  background-image: url("../images/rings_off.jpg");
+  width: 88px;
+  height: 88px;
+  position:absolute;
+  z-index:4;
+  left: 348px;
+  top: 325px;
+}
+
+#rings:hover {
+  background-image: url("../images/rings_on.jpg");
+}
+
+#verse-text {
+	position:absolute;
+	width:410px;
+	height:auto;
+	z-index:1;
+	left: 197px;
+	top: 160px;
+	line-height: 26px;
+	font-size: 18px;
+	font-style: normal;
+}
+
+#verse-text p {
+  margin: 0px;
+}
+
+/* Fade to white "white screen" */
+#white-screen {
+	background-color: #FFF;
+	position: absolute;
+	z-index: 9999;
+	width: 800px;
+	height: 450px;
+	top: 0px;
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeWhite 5s ease-in 1 forwards;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeWhite 5s ease-in 1 forwards;
+	animation:fadeWhite 5s ease-in 1 forwards;
+}
+
+/* Tip */
+.tip {
+	z-index: 99999;
+	opacity:0;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	top: 15px;
+	right: 15px;
+	display; block;
+	color: #FFF;
+	padding: 10px;
+
+	border-radius: 5px;
+	opacity:0;  /* make things invisible upon start */
+	animation: fadeIn 0.5s linear 1s ;
+	animation-fill-mode: forwards;
+}
+
+.tip:target {
+	display:none;
+}
+
+.close {
+	font-size: 12px;
+	text-decoration: none;
+	margin-left: 8px;
+	margin-right: 4px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFF;
+}

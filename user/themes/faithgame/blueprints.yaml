@@ -1,0 +1,6 @@
+name: Faith Game
+version: 0.0.1
+description: "A theme made specifically for the faithofchrist.com game"
+form:
+  validation: strict
+  fields:

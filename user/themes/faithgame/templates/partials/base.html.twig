@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		{% block head %}
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+			{% if site.metadata.description %}
+				<meta name="description" content="{{ site.metadata.description }}">
+			{% endif %}
+
+			{% if page.taxonomy.tags %}
+				<meta name="keywords" content="{% for tag in page.taxonomy.tags %}{{tag}},{% endfor %}" />
+			{% endif %}
+
+			{% if config.themes.Sidewalk.robots %}
+				<meta name="robots" content="{{ config.themes.Sidewalk.robots }}" />
+			{% endif %}
+			<title>{% if header.title %} | {% endif %}{{ site.title }}</title>
+			{% block stylesheets %}
+				{% do assets.addCss('theme://static/css/normalize.css', 201) %}
+				{% do assets.addCss('theme://static/css/style.css', 200) %}
+				{{ assets.Css() }}
+			{% endblock %}
+		{% endblock %}
+	</head>
+	<body ondragstart="return false;">
+		{% block body %}
+		<div id="container" class="{{ page.template }} {% if page.header.effect %}{{ page.header.effect }}{% endif %}">
+			{% block content %}{% endblock %}
+		</div>
+		{% block javascript %}
+			{% do assets.add('theme://static/js/jquery-2.1.1.min.js') %}
+			{% do assets.add('theme://static/js/main.js') %}
+				{% if page.header.auto_redirect %}
+					<script type="text/JavaScript">
+					<!--
+					setTimeout("location.href = '{{ page.header.link }}';",{{ page.header.auto_redirect }}*1000);
+					-->
+					</script>
+				{% endif %}
+			{{ assets.js() }}
+		{% endblock %}
+		{% endblock %}
+	</body>
+</html>

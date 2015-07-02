@@ -1,0 +1,3 @@
+1436182198
+s:392:"<div id="helmet2"><a href="../ring_01.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('small_chest','','../../graphics/chest_small_on.gif',1)"><img src="../../graphics/chest_small_off.gif" name="small_chest" width="44" height="54" border="0" onmouseover="play('latch-open')" id="small_chest" /></a></div>
+<audio id="latch-open" src="../../audio/latch-open.mp3" ></audio></div>";

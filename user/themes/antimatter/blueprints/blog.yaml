@@ -1,0 +1,4 @@
+title: Blog
+@extends:
+    context: blueprints://
+    type: pages/blog
