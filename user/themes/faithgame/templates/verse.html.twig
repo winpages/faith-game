@@ -1,0 +1,23 @@
+{% embed 'partials/base.html.twig' %}
+	{% block content %}
+
+		{# Play page audio #}
+		{% if page.header.audio %}
+			<audio autoplay src="{% if page.header.audio %}{{ url('theme://static/audio/'~page.header.audio~'.mp3') }}{% endif %}"></audio>
+		{% endif %}
+
+    <div id="verse-text">
+			{{ page.content }}
+		</div>
+      {% if page.header.lines == "3" %}
+      <img src="{{ url('theme://static/images/verse_3_line.jpg') }}" class="verse-text"/>
+      {% elseif page.header.lines == "4" %}
+      <img src="{{ url('theme://static/images/verse_4_line.jpg') }}" class="verse-text"/>
+      {% endif %}
+
+      <a href="{{ page.header.link }}"><div id="rings"></div></a>
+
+	{% endblock %}
+{% endembed %}
+
+[:1]|lower
