@@ -1,7 +1,7 @@
 absolute_urls: false
 
 home:
-  alias: '/home'
+  alias: '/c'
 
 pages:
   theme: faithgame

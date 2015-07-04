@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'timestamp' => 1435757975,
-    'checksum' => '02ff7c7291c1b677f6856a9cc02665fc',
+    'timestamp' => 1435984300,
+    'checksum' => 'd23c30eebf036e3198c3df613bc8d54c',
     'data' => [
         'streams' => [
             'schemes' => [
@@ -263,7 +263,7 @@ return [
                 'route' => '/blog'
             ],
             'metadata' => [
-                'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+                'description' => 'The Lost Faith of Christ'
             ],
             'summary' => [
                 'enabled' => true,
@@ -282,7 +282,7 @@ return [
             'timezone' => '',
             'param_sep' => ':',
             'home' => [
-                'alias' => '/home'
+                'alias' => '/c'
             ],
             'pages' => [
                 'theme' => 'faithgame',
@@ -325,7 +325,7 @@ return [
             'cache' => [
                 'enabled' => true,
                 'check' => [
-                    'method' => 'file'
+                    'method' => 'fileh'
                 ],
                 'driver' => 'auto',
                 'prefix' => 'g',

@@ -2,11 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'user/config/system.yaml',
-    'modified' => 1435757949,
+    'modified' => 1435984051,
     'data' => [
         'absolute_urls' => false,
         'home' => [
-            'alias' => '/home'
+            'alias' => '/c'
         ],
         'pages' => [
             'theme' => 'faithgame',
@@ -19,7 +19,7 @@ return [
         'cache' => [
             'enabled' => true,
             'check' => [
-                'method' => 'file'
+                'method' => 'fileh'
             ],
             'driver' => 'auto',
             'prefix' => 'g'
