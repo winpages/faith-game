@@ -16,8 +16,8 @@ class __TwigTemplate_3ac2c7ad8a7517f5d52c3012de3a1dbd064c1932c399a2cf71e0ff4f173
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        $this->loadTemplate("verse.html.twig", "verse.html.twig", 1, "2027349636")->display($context);
-        // line 22
+        $this->loadTemplate("verse.html.twig", "verse.html.twig", 1, "1629620773")->display($context);
+        // line 21
         echo "
 [:1]|lower
 ";
@@ -35,13 +35,13 @@ class __TwigTemplate_3ac2c7ad8a7517f5d52c3012de3a1dbd064c1932c399a2cf71e0ff4f173
 
     public function getDebugInfo()
     {
-        return array (  21 => 22,  19 => 1,);
+        return array (  21 => 21,  19 => 1,);
     }
 }
 
 
 /* verse.html.twig */
-class __TwigTemplate_3ac2c7ad8a7517f5d52c3012de3a1dbd064c1932c399a2cf71e0ff4f173b419c_2027349636 extends Twig_Template
+class __TwigTemplate_3ac2c7ad8a7517f5d52c3012de3a1dbd064c1932c399a2cf71e0ff4f173b419c_1629620773 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -75,9 +75,7 @@ class __TwigTemplate_3ac2c7ad8a7517f5d52c3012de3a1dbd064c1932c399a2cf71e0ff4f173
         if ($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "audio", array())) {
             // line 6
             echo "\t\t\t<audio autoplay src=\"";
-            if ($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "audio", array())) {
-                echo $this->env->getExtension('GravTwigExtension')->urlFunc((("theme://static/audio/" . $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "audio", array())) . ".mp3"));
-            }
+            echo $this->env->getExtension('GravTwigExtension')->urlFunc((("theme://static/audio/" . $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "audio", array())) . ".mp3"));
             echo "\"></audio>
 \t\t";
         }
@@ -88,27 +86,26 @@ class __TwigTemplate_3ac2c7ad8a7517f5d52c3012de3a1dbd064c1932c399a2cf71e0ff4f173
         // line 10
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "content", array());
         echo "
-\t\t</div>
       ";
-        // line 12
+        // line 11
         if (($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "lines", array()) == "3")) {
-            // line 13
+            // line 12
             echo "      <img src=\"";
             echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://static/images/verse_3_line.jpg");
-            echo "\" class=\"verse-text\"/>
+            echo "\"/>
       ";
-        } elseif (($this->getAttribute($this->getAttribute(        // line 14
+        } elseif (($this->getAttribute($this->getAttribute(        // line 13
 (isset($context["page"]) ? $context["page"] : null), "header", array()), "lines", array()) == "4")) {
-            // line 15
+            // line 14
             echo "      <img src=\"";
             echo $this->env->getExtension('GravTwigExtension')->urlFunc("theme://static/images/verse_4_line.jpg");
-            echo "\" class=\"verse-text\"/>
+            echo "\"/>
       ";
         }
-        // line 17
-        echo "
+        // line 16
+        echo "\t\t</div>
       <a href=\"";
-        // line 18
+        // line 17
         echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "link", array());
         echo "\"><div id=\"rings\"></div></a>
 
@@ -127,6 +124,6 @@ class __TwigTemplate_3ac2c7ad8a7517f5d52c3012de3a1dbd064c1932c399a2cf71e0ff4f173
 
     public function getDebugInfo()
     {
-        return array (  112 => 18,  109 => 17,  103 => 15,  101 => 14,  96 => 13,  94 => 12,  89 => 10,  85 => 8,  77 => 6,  74 => 5,  71 => 3,  68 => 2,  51 => 1,  21 => 22,  19 => 1,);
+        return array (  109 => 17,  106 => 16,  100 => 14,  98 => 13,  93 => 12,  91 => 11,  87 => 10,  83 => 8,  77 => 6,  74 => 5,  71 => 3,  68 => 2,  51 => 1,  21 => 21,  19 => 1,);
     }
 }

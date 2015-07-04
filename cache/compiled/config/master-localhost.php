@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'timestamp' => 1435757975,
-    'checksum' => '02ff7c7291c1b677f6856a9cc02665fc',
+    'timestamp' => 1435985446,
+    'checksum' => '72ecaf26cce8eebe82c4f67bd7324acb',
     'data' => [
         'streams' => [
             'schemes' => [
@@ -325,7 +325,7 @@ return [
             'cache' => [
                 'enabled' => true,
                 'check' => [
-                    'method' => 'file'
+                    'method' => 'fileh'
                 ],
                 'driver' => 'auto',
                 'prefix' => 'g',
