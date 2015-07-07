@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'timestamp' => 1435984300,
-    'checksum' => 'd23c30eebf036e3198c3df613bc8d54c',
+    'timestamp' => 1436130006,
+    'checksum' => '73838f6335b02cf52eb382291457bc88',
     'data' => [
         'streams' => [
             'schemes' => [
@@ -323,7 +323,7 @@ return [
                 'markdown_extra' => false
             ],
             'cache' => [
-                'enabled' => true,
+                'enabled' => false,
                 'check' => [
                     'method' => 'fileh'
                 ],
@@ -333,7 +333,7 @@ return [
                 'gzip' => false
             ],
             'twig' => [
-                'cache' => true,
+                'cache' => false,
                 'debug' => true,
                 'auto_reload' => true,
                 'autoescape' => false,

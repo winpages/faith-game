@@ -1,0 +1,68 @@
+{% extends 'partials/base.html.twig' %}
+  {% block content %}
+    <section class="wrapper style5 container">
+            {% for item in page.header.churches %}
+                <header><h2>{{ item.name }}</h2></header>
+                <div class="row church">
+                    <div class="3u 12u(narrower)">
+                        <section>
+                            {% if item.denomination %}
+                                <p>
+                                    <strong>Denomination:</strong><br>
+                                    {{ item.denomination }}
+                                </p>
+                            {% endif %}
+                            {% if item.service1 %}
+                                <p>
+                                    <strong>Service Times:</strong><br>
+                                    {{ item.service1 }}
+                            {% endif %}
+                            {% if item.service2 %}
+                                <br>{{ item.service2 }}
+                            {% endif %}
+                            {% if item.service3 %}
+                                <br>{{ item.service3 }}
+                            {% endif %}
+                            {% if item.service4 %}
+                                <br>{{ item.service4 }}
+                            {% endif %}
+                            {% if item.service1 %}
+                                </p>
+                            {% endif %}
+                            {% if item.url %}
+                                <a href="{{ item.url }}" class="button xsmall">Website</a>
+                            {% endif %}
+                        </section>
+                    </div>
+                    <div class="3u 12u(narrower)">
+                        {% if item.text1 %}
+                                <strong>About:</strong>
+                                <div>
+                                <p>
+                                    {{ item.text1 }}
+                                </p>
+                        {% endif %}
+                        {% if item.text2 %}
+                            <p>
+                                {{ item.text2 }}
+                            </p>
+                        {% endif %}
+                        {% if item.text3 %}
+                            <p>
+                                {{ item.text3 }}
+                            </p>
+                        {% endif %}
+                        {% if item.text1 %}
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="6u 12u(narrower) church-map">
+                        {% if item.address %}
+                                <p><strong>Address:</strong> {{ item.address }}</p>
+                                <iframe width='100%' height='265px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/sheltonchurches.{{ item.map }}/attribution,zoompan.html?access_token=pk.eyJ1Ijoic2hlbHRvbmNodXJjaGVzIiwiYSI6IjZuc3lwMncifQ.Vhxj2zgYIAc7RlTpDcNhcw'></iframe>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+    </section>
+  {% endblock %}

@@ -33,6 +33,10 @@ a {
    text-decoration: none;
 }
 
+li {
+  list-style-type: none;
+}
+
 #container {
 	position:relative;
 	width:800px;
@@ -45,7 +49,11 @@ a {
 }
 
 .battle {
-  background-image: url("../images/bg.jpg")
+  background-image: url("../images/bg.jpg");
+}
+
+.door {
+  background-image: url("../images/wood-bg1.jpg");
 }
 
 .error {
@@ -586,44 +594,55 @@ blockquote p {
 	right: 161px;
 }
 
-/* Hints */
-.keyhole-left {
-	left: 45px;
-	top: 174px;
+/* Locks */
+.lock, .lock-off, .lock-on, .lockflash {
+  width: 78px;
+  height: 78px;
 }
 
-.keyhole-center {
-	left: 163px;
-	top: 174px;
-}
-.keyhole-right {
-	left: 280px;
-	top: 174px;
-}
-
-.keyhole	{
-	position:absolute;
-	width:57px;
-	height:53px;
+.lock {
+  position: relative;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-image: url("../images/lock.png");
+  -webkit-transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear;
+  -o-transition: background 0.5s linear;
+  transition: background 0.5s linear;
 }
 
-.mouse-off {
-	background-image: url(../images/key_hole.jpg);
+.lock:hover {
+  background-image: url("../images/lock-on.png");
+}
+
+.lock-flash {
+  position: absolute;
+  opacity: 0;
+  background-image: url("../images/lock-flash.png");
+  width:78px;
+  height:78px;
+}
+
+
+#lock-1, #lock-2, #lock-3, #lock-4, #lock-5, #lock-6, #lock-7 {
+  top: 300px;
+}
+
+.door .key {
+  background-image: url("../images/key3.png");
+  width: 74px;
+  height: 56px;
+  top: 310px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .keyhole-out {
 	background-image: url(../images/key_hole_light.jpg);
 }
 
-.mouse-on {
-	background-image: url(../images/key_hole_light.jpg);
-	opacity: 0;
-	-webkit-transition: opacity 0.3s ease-in-out;
-	-moz-transition: opactiy 0.3s ease-in-out;
-	-ms-transition: opacity 0.3s ease-in-out;
-	-o-transition: opacity 0.3s ease-in-out;
-	transition: opacity 0.3s ease-in-out;
-}
+
 .mouse-on:hover {
 	transition: none;
 	-o-transition: none;
@@ -632,14 +651,6 @@ blockquote p {
 	-webkit-transition: none;
 	zoom: 1;
 	opacity: 1;
-}
-
-.keyflash {
-	opacity: 0;
-	background-image: url("../images/key_hole_flash.png");
-	position:absolute;
-	width:57px;
-	height:53px;
 }
 
 .keyflash:hover {
@@ -690,33 +701,12 @@ animation-fill-mode:forwards;
 animation-duration:.5s;
 }
 
-#hint-1, #hint-2, #hint-3, #hint-4, #hint-5 {
-  position:absolute;
-	width:400px;
-	height:270px;
-	z-index:11;
-	left: 50px;
-	top: 50px;
-}
-
-#hint-1, #hint-2 {
-  background-image: url(../images/hint_blank.jpg);
-}
-
-#hint-3 {
-  background-image: url(../images/hint_text_1.jpg);
-}
-
-#hint-4 {
-  background-image: url(../images/hint_text_2.jpg);
-}
-
-#hint-5 {
-  background-image: url(../images/hint_text_3.jpg);
+/* Verses */
+.verse {
+ display: none;
 }
 
 /* Small Chests */
-
 #small-chest {
   width: 44px;
   height: 54px;

@@ -1,0 +1,33 @@
+{% embed 'partials/base.html.twig' %}
+  {% block content %}
+
+    {# Play page audio #}
+    {% if page.header.audio %}
+      <audio autoplay src="{% if page.header.audio %}{{ url('theme://static/audio/'~page.header.audio~'.mp3') }}{% endif %}"></audio>
+    {% endif %}
+
+    {# Verses #}
+    {% for item in page.header.verses %}
+      <div class="verse" id="{{ item.name }}">
+        {{ item.reference }}
+        {{ item.content }}
+      </div>
+    {% endfor %}
+
+    {# Locks #}
+    <ul id="locks">
+      {% for item in page.header.verses %}
+        <li class="lock" id="lock-{{ loop.index }}">
+          <div class="lock-flash"></div>
+        </li>
+      {% endfor %}
+    </ul>
+
+    {# Keys #}
+      <ul id="keys">
+        {% for item in page.header.verses %}
+          <div class="key" id="key-{{ loop.index }}"></div>
+        {% endfor %}
+      </ul>
+  {% endblock %}
+{% endembed %}
