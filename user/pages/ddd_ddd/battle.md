@@ -1,5 +1,5 @@
 ---
-link: ../conclusion.htm
+link: door
 auto_redirect: 9
 effect: final-fade
 audio: wind-rush

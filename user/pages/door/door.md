@@ -1,4 +1,5 @@
 ---
+effect: fade-in-4
 verses:
     - name: verse1
       reference: Galations 2:16

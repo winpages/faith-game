@@ -1,8 +1,8 @@
 ---
-c: ccc_cc
+e: eee_ee
 return_link: 'ggg_ggg_ggg_ggg_gg'
 type: thought
-keys: 4
+keys: 6
 text: gold
 ---
-Phil 3:9
+Rev 14:12

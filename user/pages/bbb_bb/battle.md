@@ -1,5 +1,7 @@
 ---
-link: ring-7
-return_link: 'ddd_d'
-type: thought-chest
+b: bbb_bbb
+link: chest-closed-1
+return_link: verse-7
+type: thought
 ---
+John 3:16

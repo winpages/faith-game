@@ -1,6 +1,7 @@
 ---
-link: ring-9
+c: ccc
 return_link: aaa_aa
-type: thought-chest
+type: thought
 keys: 1
 ---
+Gal 3:23

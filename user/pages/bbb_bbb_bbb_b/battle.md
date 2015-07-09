@@ -1,5 +1,5 @@
 ---
-b: chest-closed-3
+b: ggg_ggg_ggg_gg
 audio: shot
 return_link: chest-open-2
 type: balloon

@@ -56,8 +56,8 @@
 
 			{# Thought #}
 			{% elseif page.header.type == "thought" %}
-				<div id="thought-{{ page.slug()|first|lower }}" {% if page.header.no_dialog_fade is null %}class="dialog-fade-in"{% endif %}>
-					<a href="{{ page.header.link }}">{{ page.content }}</a>
+				<div id="thought-{{ page.slug()|first|lower }}" {% if page.header.no_dialog_fade is null %}class="dialog-fade-in thought"{% endif %}>
+					<div id="thought-content" {% if page.header.text %}class="{{ page.header.text }}"{% else %}class="blue"{% endif %}>{{ page.content }}</div>
 				</div>
 
 			{# Thought Chest #}
@@ -78,6 +78,7 @@
 			{% endif %}
 
 			{# Hints #}
+			{#
 			{% if page.header.hint %}
 				<div id="hint-{{ page.header.hint }}">
 					{% if page.header.link_a and page.header.link_b and page.header.link_c %}
@@ -116,6 +117,7 @@
 					{% endif %}
 				</div>
 			{% endif %}
+			#}
 
 			{# Keys #}
 			{% if page.header.keys %}

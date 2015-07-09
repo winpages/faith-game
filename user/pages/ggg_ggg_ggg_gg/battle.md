@@ -1,8 +1,8 @@
 ---
-b: bbb_bbb_bb
+g: ggg_ggg_ggg_ggg
 return_link: ccc
 type: thought
-keys: 1
+keys: 3
 text: gold
 ---
-Gal 3:22-23
+Gal 2:16

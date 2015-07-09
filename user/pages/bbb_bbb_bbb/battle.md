@@ -1,6 +1,8 @@
 ---
-link: chest-closed-2
+b: bbb_bbb_bbb_b
 return_link: ccc
-type: thought-chest
-keys: 1
+type: thought
+keys: 2
+text: gold
 ---
+Gal 2:16
