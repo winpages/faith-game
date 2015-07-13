@@ -202,130 +202,463 @@ li {
   	}
 
     @keyframes flicker {
-      0% {
-        opacity: 0;
-      }
-      10% {
-        opacity: .40;
-      }
-      30% {
-        opacity: .10;
-      }
-      32% {
-        opacity: .25;
-      }
-      50% {
-        opacity: 0;
-      }
-      55% {
-        opacity: .30;
-      }
-      58% {
-        opacity: 0;
-      }
-      70% {
-        opacity: 15%
-      }
-      72% {
-        opacity: 0;
-      }
-      75% {
-        opacity: .30;
-      }
-      77% {
-        opacity: 0;
-      }
-      85% {
+        0% {
         opacity: .20;
-      }
-      100% {
-        opacity: 0;
-      }
     }
-
+    2% {
+        opacity: .30;
+    }
+    4% {
+        opacity: .50;
+    }
+    6% {
+        opacity: .50;
+    }
+    8% {
+        opacity: .20;
+    }
+    10% {
+        opacity: .40;
+    }
+    12% {
+        opacity: .30;
+    }
+    14% {
+        opacity: .50;
+    }
+    16% {
+        opacity: .20;
+    }
+    18% {
+        opacity: .50;
+    }
+    20% {
+        opacity: .50;
+    }
+    22% {
+        opacity: .40;
+    }
+    24% {
+        opacity: .20;
+    }
+    26% {
+        opacity: .50;
+    }
+    28% {
+        opacity: .50;
+    }
+    30% {
+        opacity: .50;
+    }
+    32% {
+        opacity: .40;
+    }
+    34% {
+        opacity: .50;
+    }
+    36% {
+        opacity: .40;
+    }
+    38% {
+        opacity: .30;
+    }
+    40% {
+        opacity: .20;
+    }
+    42% {
+        opacity: .50;
+    }
+    44% {
+        opacity: .30;
+    }
+    46% {
+        opacity: .20;
+    }
+    48% {
+        opacity: .50;
+    }
+    50% {
+        opacity: .20;
+    }
+    52% {
+        opacity: .20;
+    }
+    54% {
+        opacity: .20;
+    }
+    56% {
+        opacity: .30;
+    }
+    58% {
+        opacity: .40;
+    }
+    60% {
+        opacity: .50;
+    }
+    62% {
+        opacity: .50;
+    }
+    64% {
+        opacity: .30;
+    }
+    66% {
+        opacity: .20;
+    }
+    68% {
+        opacity: .30;
+    }
+    70% {
+        opacity: .40;
+    }
+    72% {
+        opacity: .40;
+    }
+    74% {
+        opacity: .50;
+    }
+    76% {
+        opacity: .20;
+    }
+    78% {
+        opacity: .40;
+    }
+    80% {
+        opacity: .40;
+    }
+    82% {
+        opacity: .30;
+    }
+    84% {
+        opacity: .30;
+    }
+    86% {
+        opacity: .20;
+    }
+    88% {
+        opacity: .20;
+    }
+    90% {
+        opacity: .50;
+    }
+    92% {
+        opacity: .20;
+    }
+    94% {
+        opacity: .20;
+    }
+    96% {
+        opacity: .50;
+    }
+    98% {
+        opacity: .20;
+    }
+    }
     @-moz-keyframes flicker {
-      0% {
-        opacity: 0;
-      }
-      10% {
-        opacity: .40;
-      }
-      30% {
-        opacity: .10;
-      }
-      32% {
-        opacity: .25;
-      }
-      50% {
-        opacity: 0;
-      }
-      55% {
-        opacity: .30;
-      }
-      58% {
-        opacity: 0;
-      }
-      70% {
-        opacity: 15%
-      }
-      72% {
-        opacity: 0;
-      }
-      75% {
-        opacity: .30;
-      }
-      77% {
-        opacity: 0;
-      }
-      85% {
+        0% {
         opacity: .20;
-      }
-      100% {
-        opacity: 0;
-      }
+    }
+    2% {
+        opacity: .30;
+    }
+    4% {
+        opacity: .50;
+    }
+    6% {
+        opacity: .50;
+    }
+    8% {
+        opacity: .20;
+    }
+    10% {
+        opacity: .40;
+    }
+    12% {
+        opacity: .30;
+    }
+    14% {
+        opacity: .50;
+    }
+    16% {
+        opacity: .20;
+    }
+    18% {
+        opacity: .50;
+    }
+    20% {
+        opacity: .50;
+    }
+    22% {
+        opacity: .40;
+    }
+    24% {
+        opacity: .20;
+    }
+    26% {
+        opacity: .50;
+    }
+    28% {
+        opacity: .50;
+    }
+    30% {
+        opacity: .50;
+    }
+    32% {
+        opacity: .40;
+    }
+    34% {
+        opacity: .50;
+    }
+    36% {
+        opacity: .40;
+    }
+    38% {
+        opacity: .30;
+    }
+    40% {
+        opacity: .20;
+    }
+    42% {
+        opacity: .50;
+    }
+    44% {
+        opacity: .30;
+    }
+    46% {
+        opacity: .20;
+    }
+    48% {
+        opacity: .50;
+    }
+    50% {
+        opacity: .20;
+    }
+    52% {
+        opacity: .20;
+    }
+    54% {
+        opacity: .20;
+    }
+    56% {
+        opacity: .30;
+    }
+    58% {
+        opacity: .40;
+    }
+    60% {
+        opacity: .50;
+    }
+    62% {
+        opacity: .50;
+    }
+    64% {
+        opacity: .30;
+    }
+    66% {
+        opacity: .20;
+    }
+    68% {
+        opacity: .30;
+    }
+    70% {
+        opacity: .40;
+    }
+    72% {
+        opacity: .40;
+    }
+    74% {
+        opacity: .50;
+    }
+    76% {
+        opacity: .20;
+    }
+    78% {
+        opacity: .40;
+    }
+    80% {
+        opacity: .40;
+    }
+    82% {
+        opacity: .30;
+    }
+    84% {
+        opacity: .30;
+    }
+    86% {
+        opacity: .20;
+    }
+    88% {
+        opacity: .20;
+    }
+    90% {
+        opacity: .50;
+    }
+    92% {
+        opacity: .20;
+    }
+    94% {
+        opacity: .20;
+    }
+    96% {
+        opacity: .50;
+    }
+    98% {
+        opacity: .20;
+    }
+    }
+    @-webkit-keyframes flicker {
+        0% {
+        opacity: .20;
+    }
+    2% {
+        opacity: .30;
+    }
+    4% {
+        opacity: .50;
+    }
+    6% {
+        opacity: .50;
+    }
+    8% {
+        opacity: .20;
+    }
+    10% {
+        opacity: .40;
+    }
+    12% {
+        opacity: .30;
+    }
+    14% {
+        opacity: .50;
+    }
+    16% {
+        opacity: .20;
+    }
+    18% {
+        opacity: .50;
+    }
+    20% {
+        opacity: .50;
+    }
+    22% {
+        opacity: .40;
+    }
+    24% {
+        opacity: .20;
+    }
+    26% {
+        opacity: .50;
+    }
+    28% {
+        opacity: .50;
+    }
+    30% {
+        opacity: .50;
+    }
+    32% {
+        opacity: .40;
+    }
+    34% {
+        opacity: .50;
+    }
+    36% {
+        opacity: .40;
+    }
+    38% {
+        opacity: .30;
+    }
+    40% {
+        opacity: .20;
+    }
+    42% {
+        opacity: .50;
+    }
+    44% {
+        opacity: .30;
+    }
+    46% {
+        opacity: .20;
+    }
+    48% {
+        opacity: .50;
+    }
+    50% {
+        opacity: .20;
+    }
+    52% {
+        opacity: .20;
+    }
+    54% {
+        opacity: .20;
+    }
+    56% {
+        opacity: .30;
+    }
+    58% {
+        opacity: .40;
+    }
+    60% {
+        opacity: .50;
+    }
+    62% {
+        opacity: .50;
+    }
+    64% {
+        opacity: .30;
+    }
+    66% {
+        opacity: .20;
+    }
+    68% {
+        opacity: .30;
+    }
+    70% {
+        opacity: .40;
+    }
+    72% {
+        opacity: .40;
+    }
+    74% {
+        opacity: .50;
+    }
+    76% {
+        opacity: .20;
+    }
+    78% {
+        opacity: .40;
+    }
+    80% {
+        opacity: .40;
+    }
+    82% {
+        opacity: .30;
+    }
+    84% {
+        opacity: .30;
+    }
+    86% {
+        opacity: .20;
+    }
+    88% {
+        opacity: .20;
+    }
+    90% {
+        opacity: .50;
+    }
+    92% {
+        opacity: .20;
+    }
+    94% {
+        opacity: .20;
+    }
+    96% {
+        opacity: .50;
+    }
+    98% {
+        opacity: .20;
+    }
     }
 
-    @-webkit-keyframes flicker {
-      0% {
-        opacity: 0;
-      }
-      10% {
-        opacity: .40;
-      }
-      30% {
-        opacity: .10;
-      }
-      32% {
-        opacity: .25;
-      }
-      50% {
-        opacity: 0;
-      }
-      55% {
-        opacity: .30;
-      }
-      58% {
-        opacity: 0;
-      }
-      70% {
-        opacity: 15%
-      }
-      72% {
-        opacity: 0;
-      }
-      75% {
-        opacity: .30;
-      }
-      77% {
-        opacity: 0;
-      }
-      85% {
-        opacity: .20;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
+
 
 .fade-in-1, .fade-in-2, .fade-in-3, .fade-in-4, .dialog-fade-in {
     opacity:0;  /* make things invisible upon start */
@@ -614,7 +947,7 @@ margin-top: 40px;
 }
 
 /* Locks */
-.lock, .lock-off, .lock-on, .lockflash {
+.lock, .lock-flash, .lock-flicker {
   width: 78px;
   height: 78px;
 }
@@ -631,18 +964,63 @@ margin-top: 40px;
   transition: background 0.5s linear;
 }
 
-.lock:hover {
-  background-image: url("../images/lock-on.png");
+.keyhole-fade-in {
+opacity:0;  /* make things invisible upon start */
+-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+-moz-animation:fadeIn ease-in 1;
+animation:fadeIn ease-in 1;
+
+-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+-moz-animation-fill-mode:forwards;
+animation-fill-mode:forwards;
+
+-webkit-animation-duration:.5s;
+-moz-animation-duration:.5s;
+animation-duration:.5s;
 }
 
-.lock-flash {
+.lock-flash:hover {
+  background-image: url("../images/lock-flash.png");
+  animation-name: flash;
+  -moz-animation-name: flash;
+  -webkit-animation-name: flash;
+
+  animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+
+  animation-delay: 0;
+  -moz-animation-delay: 0;
+  -webkit-animation-delay: 0;
+
+  animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+}
+
+.lock-flicker {
   position: absolute;
   opacity: 0;
-  background-image: url("../images/lock-flash.png");
-  width:78px;
-  height:78px;
+  background-image: url("../images/lock-flicker.png");
 }
 
+.lock-flicker:hover {
+	animation-name: flicker;
+  -moz-animation-name: flicker;
+	-webkit-animation-name: flicker;
+
+	animation-duration: 4s;
+  -moz-animation-duration: 4s;
+	-webkit-animation-duration: 4s ;
+
+  animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+
+	animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
 
 #lock-1, #lock-2, #lock-3, #lock-4, #lock-5, #lock-6, #lock-7 {
   top: 300px;
@@ -672,24 +1050,6 @@ margin-top: 40px;
 	opacity: 1;
 }
 
-.keyflash:hover {
-	animation-name: flash, flicker;
-  -moz-animation-name: flash, flicker;
-	-webkit-animation-name: flash, flicker;
-
-	animation-duration: 0.5s, 1.7s;
-  -moz-animation-duration: 0.5s, 1.7s;
-	-webkit-animation-duration: 0.5s, 1.7s ;
-
-  animation-delay: 0, 0.5;
-  -moz-animation-delay: 0, 0.5s;
-  -webkit-animation-delay: 0, 0.5s;
-
-	animation-iteration-count: 1, infinite;
-  -moz-animation-iteration-count: 1, infinite;
-	-webkit-animation-iteration-count: 1, infinite;
-}
-
 .fade-in {
 opacity:0;  /* make things invisible upon start */
 -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -703,21 +1063,6 @@ animation-fill-mode:forwards;
 -webkit-animation-duration:.9s;
 -moz-animation-duration:.9s;
 animation-duration:.9s;
-}
-
-.keyhole-fade-in {
-opacity:0;  /* make things invisible upon start */
--webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
--moz-animation:fadeIn ease-in 1;
-animation:fadeIn ease-in 1;
-
--webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
--moz-animation-fill-mode:forwards;
-animation-fill-mode:forwards;
-
--webkit-animation-duration:.5s;
--moz-animation-duration:.5s;
-animation-duration:.5s;
 }
 
 /* Verses */

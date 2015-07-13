@@ -1,6 +1,6 @@
 ---
 link: door
-auto_redirect: 9
+auto_redirect: 4
 effect: final-fade
 audio: wind-rush
 return_link: 'chest-open-1'

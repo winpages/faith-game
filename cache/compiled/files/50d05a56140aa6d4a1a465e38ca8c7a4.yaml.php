@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'user/config/system.yaml',
-    'modified' => 1436054138,
+    'modified' => 1436774477,
     'data' => [
         'absolute_urls' => false,
         'home' => [
@@ -38,7 +38,7 @@ return [
             'js_minify' => true
         ],
         'errors' => [
-            'display' => false,
+            'display' => true,
             'log' => 'true`'
         ],
         'debugger' => [

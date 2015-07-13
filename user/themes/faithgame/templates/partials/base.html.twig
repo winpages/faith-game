@@ -19,8 +19,8 @@
 			{% endif %}
 			<title>{% if header.title %} | {% endif %}{{ site.title }}</title>
 			{% block stylesheets %}
-				{% do assets.addCss('theme://static/css/normalize.css', 201) %}
-				{% do assets.addCss('theme://static/css/style.css', 200) %}
+				{% do assets.addCss('theme://css/normalize.css', 201) %}
+				{% do assets.addCss('theme://css/style.css', 200) %}
 				{{ assets.Css() }}
 			{% endblock %}
 		{% endblock %}
@@ -31,8 +31,8 @@
 			{% block content %}{% endblock %}
 		</div>
 		{% block javascript %}
-			{% do assets.add('theme://static/js/jquery-2.1.1.min.js') %}
-			{% do assets.add('theme://static/js/main.js') %}
+			{% do assets.add('theme://js/jquery-2.1.1.min.js') %}
+			{% do assets.add('theme://js/main.js') %}
 				{% if page.header.auto_redirect %}
 					<script type="text/JavaScript">
 					<!--
