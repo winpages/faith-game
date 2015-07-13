@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'system/config/streams.yaml',
-    'modified' => 1435881596,
+    'modified' => 1436405474,
     'data' => [
         'schemes' => [
             'asset' => [

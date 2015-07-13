@@ -1,0 +1,4 @@
+{# Play page audio #}
+{% if page.header.audio %}
+  <audio autoplay src="{% if page.header.audio %}{{ url('theme://audio/'~page.header.audio~'.mp3') }}{% endif %}"></audio>
+{% endif %}

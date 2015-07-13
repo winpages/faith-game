@@ -1,10 +1,7 @@
 {% embed 'partials/base.html.twig' %}
   {% block content %}
 
-    {# Play page audio #}
-    {% if page.header.audio %}
-      <audio autoplay src="{% if page.header.audio %}{{ url('theme://static/audio/'~page.header.audio~'.mp3') }}{% endif %}"></audio>
-    {% endif %}
+    {% include 'partials/audio.html.twig' %}
 
     {# Verses #}
     {% for item in page.header.verses %}
@@ -18,7 +15,9 @@
     <ul id="locks">
       {% for item in page.header.verses %}
         <li class="lock" id="lock-{{ loop.index }}">
-          <div class="lock-flash"></div>
+          <div class="lock-flash";>
+            <div class="lock-flicker"></div>
+          </div>
         </li>
       {% endfor %}
     </ul>

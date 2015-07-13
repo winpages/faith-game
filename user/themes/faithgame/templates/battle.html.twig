@@ -1,52 +1,49 @@
 {% embed 'partials/base.html.twig' %}
 	{% block content %}
 
-			{# Play page audio #}
-			{% if page.header.audio %}
-				<audio autoplay src="{% if page.header.audio == "shot" %}{{ url('theme://static/audio/'~page.header.audio~'-'~page.slug()|first|lower~'.mp3') }}{% else %}{{ url('theme://static/audio/'~page.header.audio~'.mp3') }}{% endif %}"></audio>
-			{% endif %}
+			{% include 'partials/audio.html.twig' %}
 
       {# Soldier A #}
       <a href="{% if page.header.a %}{{ page.header.a }}{% else %}#{% endif %}" {% if page.header.a %}{% else %}onclick="play('shot-a')"{% endif %}>
         <div id="soldier_a"></div>
       </a>
-      <audio id="shot-a" src="{{ url('theme://static/audio/shot-a.mp3') }}" ></audio>
+      <audio id="shot-a" src="{{ url('theme://audio/shot-a.mp3') }}" ></audio>
 
       {# Soldier B #}
       <a href="{% if page.header.b %}{{ page.header.b }}{% else %}#{% endif %}" {% if page.header.b %}{% else %}onclick="play('shot-b')"{% endif %}>
         <div id="soldier_b"></div>
       </a>
-      <audio id="shot-b" src="{{ url('theme://static/audio/shot-b.mp3') }}" ></audio>
+      <audio id="shot-b" src="{{ url('theme://audio/shot-b.mp3') }}" ></audio>
 
       {# Soldier C #}
       <a href="{% if page.header.c  %}{{ page.header.c }}{% else %}#{% endif %}" {% if page.header.c %}{% else %}onclick="play('shot-c')"{% endif %}>
         <div id="soldier_c"></div>
       </a>
-      <audio id="shot-c" src="{{ url('theme://static/audio/shot-c.mp3') }}" ></audio>
+      <audio id="shot-c" src="{{ url('theme://audio/shot-c.mp3') }}" ></audio>
 
       {# Soldier D #}
       <a href="{% if page.header.d %}{{ page.header.d }}{% else %}#{% endif %}" {% if page.header.d %}{% else %}onclick="play('shot-d')"{% endif %}>
         <div id="soldier_d"></div>
       </a>
-      <audio id="shot-d" src="{{ url('theme://static/audio/shot-d.mp3') }}" ></audio>
+      <audio id="shot-d" src="{{ url('theme://audio/shot-d.mp3') }}" ></audio>
 
       {# Soldier E #}
       <a href="{% if page.header.e %}{{ page.header.e }}{% else %}#{% endif %}" {% if page.header.e %}{% else %}onclick="play('shot-5')"{% endif %}>
         <div id="soldier_e"></div>
       </a>
-      <audio id="shot-5" src="{{ url('theme://static/audio/shot-e.mp3') }}" ></audio>
+      <audio id="shot-5" src="{{ url('theme://audio/shot-e.mp3') }}" ></audio>
 
       {# Soldier F #}
       <a href="{% if page.header.f %}{{ page.header.f }}{% else %}#{% endif %}" {% if page.header.f %}{% else %}onclick="play('shot-6')"{% endif %}>
         <div id="soldier_f"></div>
       </a>
-      <audio id="shot-6" src="{{ url('theme://static/audio/shot-f.mp3') }}" ></audio>
+      <audio id="shot-6" src="{{ url('theme://audio/shot-f.mp3') }}" ></audio>
 
       {# Soldier G #}
       <a href="{% if page.header.g %}{{ page.header.g }}{% else %}#{% endif %}" {% if page.header.g %}{% else %}onclick="play('shot-7')"{% endif %}>
         <div id="soldier_g"></div>
       </a>
-      <audio id="shot-7" src="{{ url('theme://static/audio/shot-g.mp3') }}" ></audio>
+      <audio id="shot-7" src="{{ url('theme://audio/shot-g.mp3') }}" ></audio>
 
 			{# Balloon #}
 			{% if page.header.type == "balloon" %}
@@ -65,7 +62,7 @@
 					<div id="thought-{{  page.slug()|first|lower }}">
 						<a href="{{ page.header.link }}" onmouseover="play('latch-open')">
 							<div id="small-chest">
-								<audio id="latch-open" src="{{ url('theme://static/audio/latch-open.mp3') }}"></audio>
+								<audio id="latch-open" src="{{ url('theme://audio/latch-open.mp3') }}"></audio>
 							</div>
 						</a>
 					</div>
@@ -131,9 +128,6 @@
 				<div id="white-screen"></div>
 			{% endif %}
 
-      {# Return link #}
-      <div id="return">
-        <a href="{{ page.header.return_link }}">Return</a>
-      </div>
+			{% include 'partials/return.html.twig' %}
 	{% endblock %}
 {% endembed %}

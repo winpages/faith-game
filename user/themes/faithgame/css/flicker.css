@@ -1,0 +1,456 @@
+@keyframes flicker {
+    0% {
+    opacity: .20;
+}
+2% {
+    opacity: .30;
+}
+4% {
+    opacity: .50;
+}
+6% {
+    opacity: .50;
+}
+8% {
+    opacity: .20;
+}
+10% {
+    opacity: .40;
+}
+12% {
+    opacity: .30;
+}
+14% {
+    opacity: .50;
+}
+16% {
+    opacity: .20;
+}
+18% {
+    opacity: .50;
+}
+20% {
+    opacity: .50;
+}
+22% {
+    opacity: .40;
+}
+24% {
+    opacity: .20;
+}
+26% {
+    opacity: .50;
+}
+28% {
+    opacity: .50;
+}
+30% {
+    opacity: .50;
+}
+32% {
+    opacity: .40;
+}
+34% {
+    opacity: .50;
+}
+36% {
+    opacity: .40;
+}
+38% {
+    opacity: .30;
+}
+40% {
+    opacity: .20;
+}
+42% {
+    opacity: .50;
+}
+44% {
+    opacity: .30;
+}
+46% {
+    opacity: .20;
+}
+48% {
+    opacity: .50;
+}
+50% {
+    opacity: .20;
+}
+52% {
+    opacity: .20;
+}
+54% {
+    opacity: .20;
+}
+56% {
+    opacity: .30;
+}
+58% {
+    opacity: .40;
+}
+60% {
+    opacity: .50;
+}
+62% {
+    opacity: .50;
+}
+64% {
+    opacity: .30;
+}
+66% {
+    opacity: .20;
+}
+68% {
+    opacity: .30;
+}
+70% {
+    opacity: .40;
+}
+72% {
+    opacity: .40;
+}
+74% {
+    opacity: .50;
+}
+76% {
+    opacity: .20;
+}
+78% {
+    opacity: .40;
+}
+80% {
+    opacity: .40;
+}
+82% {
+    opacity: .30;
+}
+84% {
+    opacity: .30;
+}
+86% {
+    opacity: .20;
+}
+88% {
+    opacity: .20;
+}
+90% {
+    opacity: .50;
+}
+92% {
+    opacity: .20;
+}
+94% {
+    opacity: .20;
+}
+96% {
+    opacity: .50;
+}
+98% {
+    opacity: .20;
+}
+}
+@-moz-keyframes flicker {
+    0% {
+    opacity: .20;
+}
+2% {
+    opacity: .30;
+}
+4% {
+    opacity: .50;
+}
+6% {
+    opacity: .50;
+}
+8% {
+    opacity: .20;
+}
+10% {
+    opacity: .40;
+}
+12% {
+    opacity: .30;
+}
+14% {
+    opacity: .50;
+}
+16% {
+    opacity: .20;
+}
+18% {
+    opacity: .50;
+}
+20% {
+    opacity: .50;
+}
+22% {
+    opacity: .40;
+}
+24% {
+    opacity: .20;
+}
+26% {
+    opacity: .50;
+}
+28% {
+    opacity: .50;
+}
+30% {
+    opacity: .50;
+}
+32% {
+    opacity: .40;
+}
+34% {
+    opacity: .50;
+}
+36% {
+    opacity: .40;
+}
+38% {
+    opacity: .30;
+}
+40% {
+    opacity: .20;
+}
+42% {
+    opacity: .50;
+}
+44% {
+    opacity: .30;
+}
+46% {
+    opacity: .20;
+}
+48% {
+    opacity: .50;
+}
+50% {
+    opacity: .20;
+}
+52% {
+    opacity: .20;
+}
+54% {
+    opacity: .20;
+}
+56% {
+    opacity: .30;
+}
+58% {
+    opacity: .40;
+}
+60% {
+    opacity: .50;
+}
+62% {
+    opacity: .50;
+}
+64% {
+    opacity: .30;
+}
+66% {
+    opacity: .20;
+}
+68% {
+    opacity: .30;
+}
+70% {
+    opacity: .40;
+}
+72% {
+    opacity: .40;
+}
+74% {
+    opacity: .50;
+}
+76% {
+    opacity: .20;
+}
+78% {
+    opacity: .40;
+}
+80% {
+    opacity: .40;
+}
+82% {
+    opacity: .30;
+}
+84% {
+    opacity: .30;
+}
+86% {
+    opacity: .20;
+}
+88% {
+    opacity: .20;
+}
+90% {
+    opacity: .50;
+}
+92% {
+    opacity: .20;
+}
+94% {
+    opacity: .20;
+}
+96% {
+    opacity: .50;
+}
+98% {
+    opacity: .20;
+}
+}
+@-webkit-keyframes flicker {
+    0% {
+    opacity: .20;
+}
+2% {
+    opacity: .30;
+}
+4% {
+    opacity: .50;
+}
+6% {
+    opacity: .50;
+}
+8% {
+    opacity: .20;
+}
+10% {
+    opacity: .40;
+}
+12% {
+    opacity: .30;
+}
+14% {
+    opacity: .50;
+}
+16% {
+    opacity: .20;
+}
+18% {
+    opacity: .50;
+}
+20% {
+    opacity: .50;
+}
+22% {
+    opacity: .40;
+}
+24% {
+    opacity: .20;
+}
+26% {
+    opacity: .50;
+}
+28% {
+    opacity: .50;
+}
+30% {
+    opacity: .50;
+}
+32% {
+    opacity: .40;
+}
+34% {
+    opacity: .50;
+}
+36% {
+    opacity: .40;
+}
+38% {
+    opacity: .30;
+}
+40% {
+    opacity: .20;
+}
+42% {
+    opacity: .50;
+}
+44% {
+    opacity: .30;
+}
+46% {
+    opacity: .20;
+}
+48% {
+    opacity: .50;
+}
+50% {
+    opacity: .20;
+}
+52% {
+    opacity: .20;
+}
+54% {
+    opacity: .20;
+}
+56% {
+    opacity: .30;
+}
+58% {
+    opacity: .40;
+}
+60% {
+    opacity: .50;
+}
+62% {
+    opacity: .50;
+}
+64% {
+    opacity: .30;
+}
+66% {
+    opacity: .20;
+}
+68% {
+    opacity: .30;
+}
+70% {
+    opacity: .40;
+}
+72% {
+    opacity: .40;
+}
+74% {
+    opacity: .50;
+}
+76% {
+    opacity: .20;
+}
+78% {
+    opacity: .40;
+}
+80% {
+    opacity: .40;
+}
+82% {
+    opacity: .30;
+}
+84% {
+    opacity: .30;
+}
+86% {
+    opacity: .20;
+}
+88% {
+    opacity: .20;
+}
+90% {
+    opacity: .50;
+}
+92% {
+    opacity: .20;
+}
+94% {
+    opacity: .20;
+}
+96% {
+    opacity: .50;
+}
+98% {
+    opacity: .20;
+}
+}
